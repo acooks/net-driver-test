@@ -25,7 +25,7 @@ to format test results.
 # Usage:
 
  1. Clone the repo
- 2. Run `start.sh`
+ 2. Create a test script to run `start.sh`. Example below.
 
 ## Using with rapido:
 
