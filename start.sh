@@ -1,10 +1,13 @@
 #!/usr/bin/bash
 
-# These tests are likely disruptive to the system running the driver,
-# as well as the systems on the same network.
+# This script is meant to be run in a test environment.
 #
-# Run these tests in a VM with PCI passthrough.
-# See https://github.com/rapido-linux/rapido
+# These tests are likely disruptive to the system running the driver,
+# as well as the systems on the same IP/Ethernet network.
+#
+# A good way to run these tests is in a VM, with PCI passthrough.
+# [Rapido](https://github.com/rapido-linux/rapido) is a good way to achieve it.
+# Described in more detail [here](https://github.com/acooks/rapido/blob/add-net-test/docs/network_device_driver_guide.md)
 
 pushd "$(dirname ${BASH_SOURCE[0]})"
 
