@@ -15,6 +15,7 @@ source include.sh
 
 DEV_PCI_ADDRESS=$1
 MODULE=$2
+IP_ADDR=$3
 
 ktap "KTAP version 1"
 ktap "1..5"
@@ -49,6 +50,8 @@ ktap "# Testing MTU changing"
 #tn40xx-test/get-dhcp-address.sh
 
 ./pktgen.sh
+
+ip addr add ${IP_ADDR} dev eth0
 
 popd
 ktap "# tn40xx tests complete :)"
